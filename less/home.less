@@ -10,12 +10,19 @@
         width: 20%;
         text-align: center;
         border: 1px solid black;
+        @media @phone {
+            flex-flow: row wrap;
+            width: 100%;
+        }
         .link {
             margin-top: 15%;
             margin-bottom: 12%;
             font-size: 170%;
-            color: darkblue;
-            
+            color: #51279b;
+            @media @phone {
+                margin-top: 4%;
+                margin-bottom: 4%;
+            }
         }
     }
     .cards-container {
@@ -26,6 +33,10 @@
         width: 79%;
         height: 99%;
         text-align: center;
+        justify-content: center;
+        @media @phone {
+            width: 100%;
+        }
         .card {
             display: none;
         }
