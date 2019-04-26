@@ -1,21 +1,63 @@
 nav {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   width: 99%;
   border: 1px solid black;
+  background-color: #3f9142;
 }
 nav a {
   width: 33%;
   text-align: center;
   margin: 2% 0% 1.4% 0%;
   text-decoration: none;
-  color: darkblue;
+  color: white;
+  background-color: #a3d9a5;
+  border-radius: 4%;
 }
-section.home-content {
+.name-container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  width: 99%;
 }
-section.home-content .card {
-  width: 100%;
+.name-container .company-name {
+  font-size: 220%;
+  font-family: 'Satisfy', cursive;
+  margin: 0 auto;
+}
+.home-content {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+.home-content .links-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  margin-top: 15%;
+  width: 20%;
   text-align: center;
+  border: 1px solid black;
+}
+.home-content .links-container .link {
+  margin-top: 15%;
+  margin-bottom: 12%;
+  font-size: 170%;
+  color: darkblue;
+}
+.home-content .cards-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  margin-top: 20%;
+  width: 79%;
+  height: 99%;
+  text-align: center;
+}
+.home-content .cards-container .card {
+  display: none;
+}
+.home-content .cards-container .card-selected {
+  display: flex;
 }

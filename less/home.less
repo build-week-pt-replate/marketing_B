@@ -1,8 +1,36 @@
-section.home-content {
+.home-content {
     display: flex;
     flex-flow: row wrap;
-    .card {
-        width: 100%;
+    height: 100%;
+    .links-container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        margin-top: 15%;
+        width: 20%;
         text-align: center;
+        border: 1px solid black;
+        .link {
+            margin-top: 15%;
+            margin-bottom: 12%;
+            font-size: 170%;
+            color: darkblue;
+            
+        }
+    }
+    .cards-container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        margin-top: 20%;
+        width: 79%;
+        height: 99%;
+        text-align: center;
+        .card {
+            display: none;
+        }
+        .card-selected {
+            display: flex;
+        }
     }
 }

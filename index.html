@@ -2,9 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     </head>
 
     <body>
+    <div class="container">
         <header>
             <nav>
                 <a href="./about.html">About Us</a>
@@ -12,62 +14,68 @@
                 <a href="">Log In</a>
             </nav>
         </header>
-
+        <div class="name-container">
+            <h1 class="company-name">RePlate</h1>
+        </div>
+        
         <section class="home-content">
-            <div class="who-card card">
-                <h3>Who We Are...</h4>
-                <p>RePlate is made up of a strong web development team which does most of the connecting and networking,
-                     volunteers who assist with food delivery, homeless shelters which give a warm place to eat together 
-                     and a chance to get to meet the people you directly help, and last but not least, our restaurants who
-                     provide us with yummy, safe food that was to be thrown away.
-                     </p>
+            <div class="links-container">
+                <div class="link" data-tab="1">Who We Are</div>
+                <div class="link" data-tab="2">What We Do</div>
             </div>
-            <div class="what-card card">  
-                <h3>What We Do...</h4>
-                <p>Our main goal at RePlate is to prevent food waste and use any extra food we can find to make sure
-                less fortunate souls do not go to sleep hungry tonight. Our teams make sure that while we accomplish this 
-                goal, we do so in a safe, respectable manner. </p>
-            </div>
+            <div class="cards-container">
+                <div class="card card-selected" data-tab="1">               
+                    <p>RePlate is made up of a strong web development team which does most of the connecting and networking,
+                        volunteers who assist with food delivery, homeless shelters which give a warm place to eat together 
+                        and a chance to get to meet the people you directly help, and last but not least, our restaurants who
+                        provide us with yummy, safe food that was to be thrown away.</p>
+                </div>
+                <div class="card" data-tab="2">  
+                    <p>Our main goal at RePlate is to prevent food waste and use any extra food we can find to make sure
+                    less fortunate souls do not go to sleep hungry tonight. Our teams make sure that while we accomplish this 
+                    goal, we do so in a safe, respectable manner.</p>
+                </div>
+            </div>            
         </section>
-
-
-
-
-
-    <!-- <section class="links-and-cards">
-        <div class="links">
-            <div class="link link-selected" data-tab="1"></div>
-            <div class="link" data-tab="2">What We Do</div>
-            <div class="link" data-tab="3">Who We Are</div>
-        </div>
     
-        <div class="cards">
-            <div class="card card-selected" data-tab="1">
-                <div class="links-card-title">Welcome</div>
-                <div class="links-card-description">
-                    Don’t Panic.
+    
+    
+    
+    
+        <!-- <section class="links-and-cards">
+            <div class="links">
+                <div class="link link-selected" data-tab="1"></div>
+                <div class="link" data-tab="2">What We Do</div>
+                <div class="link" data-tab="3">Who We Are</div>
+            </div>
+        
+            <div class="cards">
+                <div class="card card-selected" data-tab="1">
+                    <div class="links-card-title">Welcome</div>
+                    <div class="links-card-description">
+                        Don’t Panic.
+                    </div>
+                </div>
+                <div class="card" data-tab="2">
+                    <div class="links-card-title">Quote 2</div>
+                    <div class="links-card-description">
+                        Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no, not again. Many
+                        people have speculated that if we knew exactly why the bowl of petunias had thought that we would know a lot more about the
+                        nature of the Universe than we do now.
+                    </div>
+                </div>
+                <div class="card" data-tab="3">
+                    <div class="links-card-title">Quote 3</div>
+                    <div class="links-card-description">
+                        It is known that there are an infinite number of worlds, simply because there is an infinite amount of space for them to
+                        be in. However, not every one of them is inhabited. Therefore, there must be a finite number of inhabited worlds. Any finite
+                        number divided by infinity is as near to nothing as makes no odds, so the average population of all the planets in the Universe
+                        can be said to be zero. From this it follows that the population of the whole Universe is also zero, and that any people
+                        you may meet from time to time are merely the products of a deranged imagination.
+                    </div>
                 </div>
             </div>
-            <div class="card" data-tab="2">
-                <div class="links-card-title">Quote 2</div>
-                <div class="links-card-description">
-                    Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no, not again. Many
-                    people have speculated that if we knew exactly why the bowl of petunias had thought that we would know a lot more about the
-                    nature of the Universe than we do now.
-                </div>
-            </div>
-            <div class="card" data-tab="3">
-                <div class="links-card-title">Quote 3</div>
-                <div class="links-card-description">
-                    It is known that there are an infinite number of worlds, simply because there is an infinite amount of space for them to
-                    be in. However, not every one of them is inhabited. Therefore, there must be a finite number of inhabited worlds. Any finite
-                    number divided by infinity is as near to nothing as makes no odds, so the average population of all the planets in the Universe
-                    can be said to be zero. From this it follows that the population of the whole Universe is also zero, and that any people
-                    you may meet from time to time are merely the products of a deranged imagination.
-                </div>
-            </div>
-        </div>
-    </section> -->
+        </section> -->
+    </div>
     </body>
-    
 </html>
