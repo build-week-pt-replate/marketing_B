@@ -28,7 +28,7 @@ nav a {
   width: 99%;
 }
 .name-container .company-name {
-  font-size: 220%;
+  font-size: 235%;
   font-family: 'Satisfy', cursive;
   margin: 0 auto;
   color: #51279b;
@@ -85,4 +85,25 @@ nav a {
 }
 .home-content .cards-container .card-selected {
   display: flex;
+}
+.devs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+@media (max-width:500px) {
+  .devs {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+.devs .dev {
+  width: 39%;
+  border: 1px solid black;
+  margin-bottom: 4%;
+}
+@media (max-width:500px) {
+  .devs .dev {
+    width: 75%;
+  }
 }
