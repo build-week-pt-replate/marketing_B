@@ -107,3 +107,12 @@ nav a {
     width: 75%;
   }
 }
+.devs .row-one {
+  background-color: #e3f9e5;
+}
+.devs .row-two {
+  background-color: #7bc47f;
+}
+.devs .row-three {
+  background-color: #51279b;
+}
