@@ -1,0 +1,26 @@
+.devs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    @media @phone {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .dev {
+        width: 39%;
+        border: 1px solid black;
+        margin-bottom: 4%;
+        @media @phone {
+            width: 75%;
+        }
+    }
+    .row-one {
+        background-color: #e3f9e5;
+    }
+    .row-two {
+        background-color: #7bc47f;
+    }
+    .row-three {
+        background-color: #51279b;
+    }
+}
