@@ -2,9 +2,9 @@ nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  width: 99%;
+  width: 100%;
   border: 1px solid black;
-  background-color: #3f9142;
+  background-color: #57ae5b;
 }
 @media (max-width:500px) {
   nav {
@@ -20,15 +20,23 @@ nav a {
   color: white;
   background-color: #a3d9a5;
   border-radius: 4%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
 }
 .name-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 99%;
+  width: 100%;
+}
+.name-container .fork-img {
+  width: 20%;
+  height: 32%;
+  margin-bottom: 3%;
+  display: none;
 }
 .name-container .company-name {
-  font-size: 235%;
+  font-size: 335%;
   font-family: 'Satisfy', cursive;
   margin: 0 auto;
   color: #51279b;
@@ -36,16 +44,26 @@ nav a {
 .home-content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   height: 100%;
+  width: 90%;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid black;
+  background-color: #e3f9e5;
 }
 .home-content .links-container {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
-  margin-top: 15%;
+  align-items: center;
   width: 20%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-left: 0.75%;
   text-align: center;
   border: 1px solid black;
+  background-color: #57ae5b;
 }
 @media (max-width:500px) {
   .home-content .links-container {
@@ -57,27 +75,36 @@ nav a {
   margin-top: 15%;
   margin-bottom: 12%;
   font-size: 170%;
+  border-radius: 3px;
+  width: 70%;
   color: #51279b;
+  background-color: #a3d9a5;
+}
+.home-content .links-container .link:hover {
+  cursor: pointer;
 }
 @media (max-width:500px) {
   .home-content .links-container .link {
     margin-top: 4%;
     margin-bottom: 4%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
   }
 }
 .home-content .cards-container {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
-  margin-top: 20%;
   width: 79%;
-  height: 99%;
-  text-align: center;
+  height: auto;
+  align-items: center;
   justify-content: center;
+  background-color: #e3f9e5;
 }
 @media (max-width:500px) {
   .home-content .cards-container {
     width: 100%;
+    border-radius: 5px;
   }
 }
 .home-content .cards-container .card {
@@ -85,11 +112,24 @@ nav a {
 }
 .home-content .cards-container .card-selected {
   display: flex;
+  box-sizing: border-box;
+  padding: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 85%;
+  background-color: #a3d9a5;
+}
+@media (max-width:500px) {
+  .home-content .cards-container .card-selected {
+    width: 100%;
+    margin-bottom: 5%;
+  }
 }
 .devs {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
 }
 @media (max-width:500px) {
   .devs {
@@ -101,6 +141,7 @@ nav a {
   width: 39%;
   border: 1px solid black;
   margin-bottom: 4%;
+  padding: 2%;
 }
 @media (max-width:500px) {
   .devs .dev {
