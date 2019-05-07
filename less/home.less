@@ -1,15 +1,25 @@
 .home-content {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     height: 100%;
+    width: 90%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    background-color: #e3f9e5;
     .links-container {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
-        margin-top: 15%;
+        align-items: center;
         width: 20%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        margin-left: .75%;
         text-align: center;
         border: 1px solid black;
+        background-color: @nav-green;
         @media @phone {
             flex-flow: row wrap;
             width: 100%;
@@ -18,10 +28,18 @@
             margin-top: 15%;
             margin-bottom: 12%;
             font-size: 170%;
+            border-radius: 3px;
+            width: 70%;
             color: #51279b;
+            background-color: #a3d9a5;
+            &:hover {
+                cursor: pointer;
+            }
             @media @phone {
                 margin-top: 4%;
                 margin-bottom: 4%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
             }
         }
     }
@@ -29,19 +47,30 @@
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
-        margin-top: 20%;
         width: 79%;
-        height: 99%;
-        text-align: center;
+        height: auto;
+        align-items: center;
         justify-content: center;
+        background-color: #e3f9e5;
         @media @phone {
             width: 100%;
+            border-radius: 5px;
         }
         .card {
             display: none;
         }
         .card-selected {
             display: flex;
+            box-sizing: border-box;
+            padding: 2%;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 85%;
+            background-color: #a3d9a5;
+            @media @phone {
+                width: 100%;
+                margin-bottom: 5%;
+            }
         }
     }
 }
